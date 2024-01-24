@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Todo</title>
+</head>
+
+<body>
+    <ul>
+        {% for item in todos %}
+        <li>
+            <p>{{ item.title }} : {% if item.kamel %} کامل شده {% else %} کامل نشده {% endif %}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>
